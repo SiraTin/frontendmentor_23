@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Article preview component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/923179f186.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <section class="section_1">
+        <div class="container">
+          <div class="box d_flex">
+            <div class="body_left"></div>
+            <div class="body_right">
+              <h1 class="heading">
+                Shift the overall look and feel by adding these wonderful
+                touches to furniture in your home
+              </h1>
+              <p class="text">
+                Ever been in a room and felt like something was missing? Perhaps
+                it felt slightly bare and uninviting. I’ve got some simple tips
+                to help you make any room feel complete.
+              </p>
+              <div class="d-flex hide">
+                <div class="profile">
+                  <img
+                    src="images/avatar-michelle.jpg"
+                    alt="avatar-michelle"
+                    class="avatar"
+                  />
+                  <div class="fullmname">
+                    <p class="name">Michelle Appleton</p>
+                    <p class="brithday">28 Jun 2020</p>
+                  </div>
+                </div>
+                <div class="share">
+                  <div class="btn">
+                    <i
+                      class="fa-solid fa-share"
+                      onclick="changeColor()"
+                      id="changeColor"
+                    ></i>
+                  </div>
+                </div>
+                <div class="share_hide d_hide">
+                  <div class="share_flex">
+                    <p class="share_text">SHARE</p>
+                    <a href="#">
+                      <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-square-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-pinterest"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="triangle-down d_hide"></div>
+              </div>
+            </div>
+
+            <!-- responsive -->
+            <div class="ft_responsive">
+              <div class="responsive">
+                <div class="profile">
+                  <img
+                    src="images/avatar-michelle.jpg"
+                    alt="avatar-michelle"
+                    class="avatar"
+                  />
+                  <div class="fullmname">
+                    <p class="name">Michelle Appleton</p>
+                    <p class="brithday">28 Jun 2020</p>
+                  </div>
+                </div>
+                <div class="share">
+                  <div class="btn">
+                    <i
+                      class="fa-solid fa-share"
+                      onclick="changeFooter()"
+                      id="changeFooter"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+              <div class="share2">
+                <div class="share_hide2 d-flex">
+                  <div class="share_flex">
+                    <p class="share_text">SHARE</p>
+                    <a href="#">
+                      <i class="fa-brands fa-square-facebook brands2"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-square-twitter brands2"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-pinterest brands2"></i>
+                    </a>
+                    <div class="share">
+                      <div class="btn">
+                        <i
+                          class="fa-solid fa-share share_2"
+                          onclick="changeFooter()"
+                          id="changeColor2"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EDF2F8;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 22rem;
+    font-family: "Quicksand", sans-serif;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    max-width: 46rem;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: .75rem;
+}
+
+.d_flex{
+    display: flex;
+    justify-content: center;
+}
+
+.body_left{
+    width: 100%;
+    background-image: url('images/drawers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .75rem 0 0 .75rem;
+}
+
+.body_right{
+    padding: 2rem;
+}
+
+.heading{
+    font-size: 1.5rem;
+    color: #49556B;
+}
+
+.text{
+    margin: 1rem 0;
+    color: #6e7f9e;
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar{
+    max-width: 2.5rem;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #49556B;
+}
+
+.brithday{
+    margin-top: 0.25rem;
+    font-size: 0.75rem;
+    color: #49556B;
+    font-weight: 500;
+}
+
+.fa-share{
+    cursor: pointer;
+    background-color: #EBF2FB;
+    padding: .75rem;
+    border-radius: 50%;
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid #49556B;
+    position: absolute;
+    bottom: 110%;
+    right: 0.5rem;
+}
+
+.share_hide{
+    position: absolute;
+    bottom: 140%;
+    right: -20%;
+    background-color: #49556B;
+    border-radius: .75rem;
+
+}
+
+.d_hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.changeColor{
+    color: #fff;
+    background-color: #49556B;
+}
+
+.share_flex{
+    display: flex;
+    gap: 1rem;
+    padding: 0.75rem 2rem;
+    align-items: center;
+}
+
+.share_text{
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+.fa-brands{
+    font-size: 1.75rem;
+    color: #fff;
+}
+
+.share_text{
+    color: #fff;
+}
+
+.ft_responsive{
+    display: none;
+}
+
+@media only screen and (max-width: 720px){
+    .ft_responsive{
+        display: block;
+    }
+
+    .d_flex{
+        flex-direction: column;
+    }
+
+    .container{
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
+
+    
+    .body_left{
+        height: 17rem;
+        max-height: 17rem;
+        border-radius: .75rem .75rem 0 0;
+    }
+
+    .brands2{
+        color: #fff;
+    }
+
+    .share2{
+        display: none;
+        max-width: 100%;
+        color: #fff;
+        background-color: #49556B;
+        border-radius: 0 0 .75rem .75rem;
+    }
+
+    .share_flex{
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .share_2{
+        color: #fff;
+        background-color: #6e7f9e;
+    }
+
+    .responsive{
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .show2{
+        display: block;
+    }
+
+}
+
+
